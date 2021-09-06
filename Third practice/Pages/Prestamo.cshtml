@@ -1,0 +1,28 @@
+﻿@page
+@model Third_practice.Pages.PrestamoModel
+@{
+}
+
+<h1 class="text-center my-5">Amortización mediante el sistema francés</h1>
+
+<div class="row d-flex justify-content-center">
+    <div class="col-6">
+        <form method="get">
+            <label>Monto:</label>
+            <input type="text" name="monto" class="form-control" />
+            <label>Cantidad de cuotas:</label>
+            <input type="text" name="cantidadCuotas" class="form-control" />
+            <label>Porcentaje de interes anual:</label>
+            <input type="text" name="porcentajeInteresAnual" class="form-control" />
+            <input type="submit" value="Calcular" class="btn btn-primary my-2" />
+        </form>
+
+        <p class="my-5">
+            La cuota mensual es: <span class="text-dark"> @Model.cuota </span>
+        </p>
+
+    </div>
+</div>
+
+
+
